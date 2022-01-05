@@ -15,7 +15,7 @@ class MainActivity : AppCompatActivity() {
 
         val btn = findViewById<Button>(R.id.btn_start)
         btn.setOnClickListener{
-            val intent = Intent(this@MainActivity, PreferencePage::class.java)
+            val intent = Intent(this@MainActivity, SinglePlayer::class.java)
             startActivity(intent)
             finish()
         }
