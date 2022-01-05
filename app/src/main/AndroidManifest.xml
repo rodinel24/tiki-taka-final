@@ -10,8 +10,19 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TicTacToe">
         <activity
-            android:name=".Homepage"
+            android:name=".Multiplayer"
+            android:parentActivityName=".PreferencePage"
+            android:exported="false"
+            />
+        <activity
+            android:name=".SinglePlayer"
+            android:parentActivityName=".PreferencePage"
             android:exported="false" />
+        <activity
+            android:name=".PreferencePage"
+            android:parentActivityName=".MainActivity"
+            android:exported="false" />
+
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

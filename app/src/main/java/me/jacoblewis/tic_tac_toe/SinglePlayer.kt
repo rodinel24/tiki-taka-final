@@ -5,20 +5,21 @@ import android.os.Bundle
 import android.view.View
 import androidx.activity.viewModels
 import androidx.lifecycle.Observer
-import me.jacoblewis.tic_tac_toe.databinding.ActivityHomepageBinding
+import me.jacoblewis.tic_tac_toe.databinding.SinglePlayerActivityBinding
 import me.jacoblewis.tic_tac_toe.databinding.ActivityMainBinding
+
 import me.jacoblewis.tic_tac_toe.models.Board
 import me.jacoblewis.tic_tac_toe.models.BoardState
 import me.jacoblewis.tic_tac_toe.models.Cell
 
-class Homepage : AppCompatActivity() {
+class SinglePlayer : AppCompatActivity() {
 
-        lateinit var binding: ActivityHomepageBinding
+        lateinit var binding:SinglePlayerActivityBinding
         val vm: MainActivityViewModel by viewModels()
 
         override fun onCreate(savedInstanceState: Bundle?) {
             super.onCreate(savedInstanceState)
-            binding = ActivityHomepageBinding.inflate(layoutInflater)
+            binding = SinglePlayerActivityBinding.inflate(layoutInflater)
             setContentView(binding.root)
             //setContentView(R.layout.activity_homepage)
 
